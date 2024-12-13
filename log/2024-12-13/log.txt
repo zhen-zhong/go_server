@@ -1,0 +1,3 @@
+2024/12/13 12:22:56 Request GET /api/hello took 792ns
+2024/12/13 12:23:02 Request GET /api/test took 131.291µs
+2024/12/13 12:24:16 Request GET /api/test 200 took 476.084µs
