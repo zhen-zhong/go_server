@@ -7,6 +7,8 @@ import (
 )
 
 func main() {
+	// 设置 Gin 模式为 Release
+	gin.SetMode(gin.ReleaseMode)
 	// 创建一个 Gin 引擎实例
 	r := gin.Default()
 
@@ -17,7 +19,7 @@ func main() {
 	api := r.Group("/api")
 	{
 		// 注册所有接口的路由
-		routes.RegisterHelloRoutes(api)  // 注册 hello 接口
+		routes.TestoRoutes(api) 
 	}
 
 	// 启动 HTTP 服务，监听在 8080 端口

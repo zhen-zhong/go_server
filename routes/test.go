@@ -5,10 +5,10 @@ import (
 	"net/http"
 )
 
-func RegisterHelloRoutes(rg *gin.RouterGroup) {
-	rg.GET("/hello", func(c *gin.Context) {
+func TestoRoutes(rg *gin.RouterGroup) {
+	rg.GET("/test", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "Hello, API!",
+			"message": "Test, API!",
 		})
 	})
 }
